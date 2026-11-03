@@ -1,6 +1,6 @@
 ---
 name: researcher
-description: 分工模式的市場調查員。需要上網查現況、店家、價位、客群習慣時使用，產出 market.md。
+description: 分工模式的市場調查員。需要上網查現況、類似案例、價位、客群習慣時使用，產出 market.md。
 tools: WebSearch, WebFetch, Read, Write
 ---
 
