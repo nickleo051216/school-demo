@@ -18,7 +18,7 @@
 
 ## A. 聊天 AI 版（免費）
 
-1. 打開 [`prompts/chat-discussion.md`](prompts/chat-discussion.md)（討論模式）或 [`prompts/chat-work.md`](prompts/chat-work.md)（分工模式）。
+1. 打開 [`prompts/chat-discussion.md`](prompts/chat-discussion.md)（討論模式）或 [`prompts/chat-work.md`](prompts/chat-work.md)（分工模式）。維運演練用 [`prompts/maintenance-test.md`](prompts/maintenance-test.md)。
 2. 複製灰色框裡的整段文字。
 3. 把 `【我的問題】` 換成你的問題，角色想換就換。
 4. 貼到 ChatGPT、Gemini 或 Claude 的**新對話**，送出。
@@ -46,7 +46,7 @@
 **分工**
 
 ```text
-/taskforce 我考慮在學校附近租房，幫我評估值不值得
+/taskforce 手搖飲店要不要推出 39 元平價杯？
 ```
 
 會議紀錄和產出的檔案都會存在 `meetings/` 資料夾。
@@ -64,7 +64,7 @@
 ```
 
 ```text
-開分工小組：我考慮在學校附近租房，幫我評估值不值得
+開分工小組：手搖飲店要不要推出 39 元平價杯？
 ```
 
 Codex 會讀 [`AGENTS.md`](AGENTS.md) 和 `.codex/agents/` 裡的子代理設定。子代理功能以 OpenAI 官方文件為準；如果你的版本不支援，它會改成自己依序扮演每個角色。
