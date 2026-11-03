@@ -121,7 +121,7 @@ AI 很容易順著你的話講。在規則裡加一句，逼它反對你：
 ## 檔案結構
 
 ```text
-ai-roundtable/
+school-demo/
 ├── README.md               ← 你正在看的說明
 ├── chair.md                ← 主席 Agent 規則（三種用法共用）
 ├── roles/                  ← 角色卡
