@@ -18,7 +18,7 @@
 
 ## A. 聊天 AI 版（免費）
 
-1. 打開 [`prompts/chat-discussion.md`](prompts/chat-discussion.md)（討論模式）或 [`prompts/chat-work.md`](prompts/chat-work.md)（分工模式）。維運演練用 [`prompts/maintenance-test.md`](prompts/maintenance-test.md)。
+1. 打開 [`prompts/chat-discussion.md`](prompts/chat-discussion.md)（討論模式）或 [`prompts/chat-work.md`](prompts/chat-work.md)（分工模式）。維運演練用 [`prompts/maintenance-test.md`](prompts/maintenance-test.md)。題目庫與加碼關卡在 [`prompts/topic-bank.md`](prompts/topic-bank.md)。
 2. 複製灰色框裡的整段文字。
 3. 把 `【我的問題】` 換成你的問題，角色想換就換。
 4. 貼到 ChatGPT、Gemini 或 Claude 的**新對話**，送出。
