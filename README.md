@@ -6,6 +6,20 @@
 
 ---
 
+## 今天上課這樣用（第二場 7 個實作）
+
+| 實作 | 用哪個檔案 |
+|---|---|
+| 1 身分證 | [`roles/_template.md`](roles/_template.md)（範例：[`roles/life/roommate.md`](roles/life/roommate.md)） |
+| 2、3 會議 v1 → v2 | [`prompts/chat-discussion.md`](prompts/chat-discussion.md) |
+| 4 商管決策表 | 同上，最後加一句「主席再整理一張加權決策表」 |
+| 5 4 個 AI 分工 | [`prompts/chat-work.md`](prompts/chat-work.md) |
+| 6 專屬 AI 助理 | 把會議卡貼進 ChatGPT 專案／Gemini Gem／Claude 專案 |
+| 7 回歸測試 | [`prompts/maintenance-test.md`](prompts/maintenance-test.md) |
+| ★ 加碼關卡、題目庫 | [`prompts/topic-bank.md`](prompts/topic-bank.md) |
+
+---
+
 ## 三種用法，挑一種
 
 | 你有什麼 | 用哪個 | 要錢嗎 | 每個角色是獨立的 AI 嗎 |
