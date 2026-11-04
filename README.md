@@ -91,8 +91,11 @@ Codex 會讀 [`AGENTS.md`](AGENTS.md) 和 `.codex/agents/` 裡的子代理設定
 |---|---|---|
 | `roles/life/` | 生活題目 | 精打細算的會計、熱血學長、擔心的媽媽、毒舌室友、佛系學霸 |
 | `roles/business/` | 商業題目 | 行銷總監、財務長、客服主管、營運經理、毒舌網友 |
+| `roles/hats/` | 六頂思考帽 | 白帽、紅帽、黑帽、黃帽、綠帽（主席是藍帽） |
 | `roles/work/` | 分工模式 | 市場調查員、財務分析師、文案企劃、風險審查員 |
 | `roles/custom/` | 你自己的角色 | 照 [`roles/_template.md`](roles/_template.md) 新增 |
+
+**每個 AI Agent 都有自己的檔案**：角色卡（`roles/`）是給人看的身分證；`.claude/agents/`（Claude Code）和 `.codex/agents/`（Codex）是給 AI 讀的版本，每個角色一個檔案，寫著它的身分、可以用的工具（例如只能讀檔）和要用哪個模型。這就是業界做多代理的標準做法。
 
 **自己發明角色**：複製 `roles/_template.md`，填好名稱、立場、說話風格，存進 `roles/custom/`。用 Claude Code 或 Codex 時，也可以直接說「加一個只想耍廢的室友」，它會幫你建卡。
 
@@ -141,10 +144,10 @@ school-demo/
 ├── roles/                  ← 角色卡
 ├── prompts/                ← 聊天 AI 版提示詞
 ├── CLAUDE.md               ← Claude Code 讀的說明
-├── .claude/agents/         ← Claude Code 子代理
+├── .claude/agents/         ← 每個 AI Agent 一個 .md 檔（15 個討論角色＋4 個分工角色＋通用角色）
 ├── .claude/commands/       ← /roundtable、/taskforce 指令
 ├── AGENTS.md               ← Codex 讀的說明
-├── .codex/agents/          ← Codex 子代理
+├── .codex/agents/          ← 同上，Codex 版（每個 Agent 一個 .toml）
 └── meetings/               ← 會議紀錄與產出
 ```
 

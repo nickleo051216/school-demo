@@ -6,13 +6,15 @@
 
 - `chair.md`：主席規則，兩種模式都照它走。
 - `roles/life/`、`roles/business/`：討論模式的角色卡。
+- `roles/hats/`：六頂思考帽版的角色卡（主席就是藍帽）。
 - `roles/work/`：分工模式的角色卡（有任務、工具、產出檔案）。
+- `.claude/agents/`：**每個 AI Agent 一個檔案**（身分證＋工具權限＋模型）。討論角色、分工角色都有自己的檔案。
 - `roles/custom/`：使用者自己新增的角色卡。
 - `meetings/`：每場會議的紀錄與產出。
 
 ## 兩個指令
 
-- `/roundtable 題目 ｜ 角色 ｜ 輪數`：討論模式，每位角色由 `roundtable-member` 子代理扮演。
+- `/roundtable 題目 ｜ 角色 ｜ 輪數`：討論模式，每位角色由 `.claude/agents/` 裡它自己的子代理發言；自創角色才用通用的 `roundtable-member`。
 - `/taskforce 任務`：分工模式，由 `researcher`、`analyst`、`writer`、`reviewer` 子代理分頭執行。
 
 使用者沒有打指令、只是描述問題時：問題是「要不要、選哪個」這類決定，就用討論模式；問題需要查資料、算數字、產出檔案，就用分工模式。開始前用一句話告訴使用者你選了哪個模式。
